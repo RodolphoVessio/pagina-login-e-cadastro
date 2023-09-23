@@ -1,0 +1,106 @@
+:root {
+    --cor-de-fundo: #2D4356;
+    --cor-do-input: #435B66;
+    --cor-do-botao: #A76F6F;
+    --cor-da-font:  #054664;
+    --cor-do-texto: #b6b5b5;
+
+    --font-primaria:'Roboto', sans-serif;
+    --font-segindaria:'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    overflow: hidden;
+    width: 100%;
+}
+
+#login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.caixa {
+    margin-top: 4rem;
+}
+
+.titulo {
+    color: #fafafa;
+    font-weight: var(--font-primaria);
+    font-size: 24px;
+}
+
+.email input {
+    font-weight: var(--font-primaria);
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: var(--cor-do-input);
+    color: var(--cor-da-font);
+    margin-top: 2rem;
+}
+
+.senha input {
+    font-weight: var(--font-primaria);
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: var(--cor-do-input);
+    color: var(--cor-da-font);
+    margin-top:1rem;
+}
+
+.link-conta {
+    text-decoration: none;
+    color:aqua;
+    font-weight: var(--font-primaria);
+    font-size:14px;
+}
+
+.texto {
+    font-size:40px;
+    margin-top: 1rem;
+    font-size: var(--font-primaria);
+    color:var(--cor-do-texto);
+
+}
+
+.entrar input {
+    font-weight: var(--font-primaria);
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color:var(--cor-do-botao);
+    color: var(--cor-da-font);
+    margin-top:1.5rem;
+}
+
+input::placeholder {
+    color: #b6b6b6; 
+}
+
+input:focus {
+    outline: none;
+}
+
+@media (max-width: 854px) {
+   
+    .caixa {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 50%;
+    }
+}
